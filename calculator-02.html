@@ -6,36 +6,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculator-02</title>
   <style>
+    .calculator {
+      text-align: center;
+    }
     .calculator-02 {
-      border-style: solid;
+      border-style: none;
+      border-radius: 5px;
       width: 300px;
-      height: 700px;
-      border-color: red;
+      height: 640px;
+      
       background-color: rgb(1, 1, 1);
+      display: inline-block;
+      box-shadow: 10px 11px 5px rgba(0, 0, 0, 0.3);
+      
     }
     .display {
-      border-style: solid;
-      width: 295px;
+      border-style: none;
+      width: 290px;
       height: 250px;
       border-color: blue;
+      display: inline-block;
+      margin-top: 5px;
+      border-radius: 4px;
+      background-color: rgb(66, 126, 4);
     }
     .display-1 {
-      border-style: solid;
+      border-style: none;
       width: 290px;
       height: 100px;
       border-color: red;
+      font-size: 30px;
       color: white;
+      padding-top: 10px;
+      
     }
     .display-2 {
-      border-style: solid;
+      border-style: none;
       width: 290px;
       height: 60px;
       border-color: red; 
       margin-top: 4px;
-      color: rgb(97, 97, 97);
+      color: rgb(204, 204, 204);
+      font-size: 25px;
     }
     .display-3 {
-      border-style: solid;
+      border-style: none;
       width: 290px;
       height: 60px;
       border-color: red;
@@ -47,19 +62,20 @@
     }
 
     .keys {
-      border-style: solid;
+      border-style: none;
       width: 295px;
       height: 360px;
       border-color: blue;
       margin-top: 10px;
-      text-align: center                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ;
+      text-align: center;
+      display: inline-block;
     }
     .row-key-1,
     .row-key-2,
     .row-key-3,
     .row-key-4,
     .row-key-5 {
-      border-style: solid;
+      border-style: none;
       width: 290px;
       height: 60px;
       border-color: red;
@@ -112,7 +128,7 @@
       width: 30px;
       vertical-align: middle;
       margin-top: 15px;
-      border-style: solid;
+      border-style: none;
       border-color: orange;
       border-radius: 20px;
     }
@@ -120,9 +136,9 @@
       width: 30px;
       vertical-align: middle;
       margin-top: 15px;
-      border-style: solid;
+      border-style: none;
       border-color: orange;
-      border-radius: 20px;
+      border-radius: 10px;
     }
     .backspace-button,
     .time-machine {
@@ -138,59 +154,65 @@
   </style>
 </head>
 <body style="margin-bottom: 1000px;">
-  <div class="calculator-02">
+  <div class="calculator">
+    <div class="calculator-02">
 
-    <div class="display">
-      <div class="display-1">
-        146,543,556
+      <div class="display">
+        <div class="display-1">
+          146,543,556
+        </div>
+        <div class="display-2">10,000</div>
+        <div class="display-3">
+          <img src="./calculator-designs/time-machine-2.png" alt="" class="time-machine">
+  
+          <img src="./calculator-designs/clear-symbol.png" alt="" class="backspace-button">
+          
+        </div>
       </div>
-      <div class="display-2">10,000</div>
-      <div class="display-3">
-        <img src="./calculator-designs/time-machine.png" alt="" class="time-machine">
-
-        <img src="./calculator-designs/backspace-2.png" alt="" class="backspace-button">
-        
+  
+      <div class="keys">
+        <div class="row-key-1">
+          <button class="clear-button">C</button>
+          <button class="oparator"> <span class="parenth">&#40; &#41;</span> </button>
+          <button class="oparator"> <span class="percent">&#37;</span></button>
+          <button class="oparator"><span class="oparetors-sign">&#247;</span> </button>
+  
+        </div>
+        <div class="row-key-2">
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button class="oparator"><span class="oparetors-sign">&#215;</span> </button>
+        </div>
+  
+        <div class="row-key-3">
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button class="oparator"><span class="oparetors-sign">&#8211;</span> </button>
+        </div>
+  
+        <div class="row-key-4">
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button class="oparator"><span class="oparetors-sign">&#43;</span> </button>
+        </div>
+  
+        <div class="row-key-5">
+          <button>&#177;</button>
+          <button>0</button>
+          <button>&#8901;</button>
+          <button class="equal-sign"> <span class="oparetors-sign">&#61;</span></button>
+        </div>
       </div>
+  
     </div>
-
-    <div class="keys">
-      <div class="row-key-1">
-        <button class="clear-button">C</button>
-        <button class="oparator"> <span class="parenth">&#40; &#41;</span> </button>
-        <button class="oparator"> <span class="percent">&#37;</span></button>
-        <button class="oparator"><span class="oparetors-sign">&#247;</span> </button>
-
-      </div>
-      <div class="row-key-2">
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button class="oparator"><span class="oparetors-sign">&#215;</span> </button>
-      </div>
-
-      <div class="row-key-3">
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button class="oparator"><span class="oparetors-sign">&#8211;</span> </button>
-      </div>
-
-      <div class="row-key-4">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button class="oparator"><span class="oparetors-sign">&#43;</span> </button>
-      </div>
-
-      <div class="row-key-5">
-        <button>&#177;</button>
-        <button>0</button>
-        <button>&#8901;</button>
-        <button class="equal-sign"> <span class="oparetors-sign">&#61;</span></button>
-      </div>
-    </div>
-
   </div>
+
+
+
+ 
 
   
 
