@@ -11,7 +11,7 @@
       width: 300px;
       height: 700px;
       border-color: red;
-      background-color: orange;
+      background-color: rgb(1, 1, 1);
     }
     .display {
       border-style: solid;
@@ -38,7 +38,8 @@
       height: 60px;
       border-color: red;
       margin-top: 5px; 
-      text-align: center       ;
+      text-align: center;
+      
     }
 
     .keys {
@@ -65,9 +66,30 @@
       height: 60px;
       border: none;
       border-radius: 30px;
-      background-color: rgb(44, 44, 44);
+      background-color: rgb(23, 23, 23);
       color: white;
       font-size: 25px;
+      vertical-align: middle;
+      
+    }
+    .clear-button {
+      color: rgb(225, 120, 116);
+      font-weight: bold;
+    }
+    .oparator {
+      color: rgb(66, 126, 4);
+      
+    }
+    .equal-sign {
+      background-color: rgb(66, 126, 4);
+    }
+    .oparetors-sign {
+      font-size: 30px;
+    }
+    .parenth,
+    .percent {
+      font-size: 20px;
+      
     }
   </style>
 </head>
@@ -75,8 +97,8 @@
   <div class="calculator-02">
 
     <div class="display">
-      <div class="display-1"></div>
-      <div class="display-2"></div>
+      <div class="display-1">146,543,556</div>
+      <div class="display-2">10,000</div>
       <div class="display-3">
         <button>&#927;</button>
         <button>&#8592;</button>
@@ -85,38 +107,38 @@
 
     <div class="keys">
       <div class="row-key-1">
-        <button>C</button>
-        <button>&#40; &#41;</button>
-        <button>&#37;</button>
-        <button>&#247;</button>
+        <button class="clear-button">C</button>
+        <button class="oparator"> <span class="parenth">&#40; &#41;</span> </button>
+        <button class="oparator"> <span class="percent">&#37;</span></button>
+        <button class="oparator"><span class="oparetors-sign">&#247;</span> </button>
 
       </div>
       <div class="row-key-2">
         <button>7</button>
         <button>8</button>
         <button>9</button>
-        <button>&#215;</button>
+        <button class="oparator"><span class="oparetors-sign">&#215;</span> </button>
       </div>
 
       <div class="row-key-3">
         <button>4</button>
         <button>5</button>
         <button>6</button>
-        <button>&#45;</button>
+        <button class="oparator"><span class="oparetors-sign">&#8211;</span> </button>
       </div>
 
       <div class="row-key-4">
         <button>1</button>
         <button>2</button>
         <button>3</button>
-        <button>&#43;</button>
+        <button class="oparator"><span class="oparetors-sign">&#43;</span> </button>
       </div>
 
       <div class="row-key-5">
         <button>&#177;</button>
         <button>0</button>
         <button>&#8901;</button>
-        <button>&#61;</button>
+        <button class="equal-sign"> <span class="oparetors-sign">&#61;</span></button>
       </div>
     </div>
 
