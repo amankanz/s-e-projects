@@ -1,3 +1,3 @@
-Building A Calculator and a Todo-List with
+Building a Calculator and a Todo-List with
 html, css
 and Javascript
