@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo List-02</title>
+  <style>
+    body {
+      font-family: Arial;
+    }
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .todo-list-container {
+      border: 2px solid lightpink;
+      width: 600px;
+      padding: 10px;
+      background-color: #66bfbf;
+    }
+    .input-box-section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      
+    }
+
+    .title {
+      margin-bottom: 30px;
+      font-size: 30px;
+    }
+
+    .input-box {
+      background-color: #eaf6f6;
+      color: black;
+      font-size: 16px;
+      border-style: none;
+      border-radius: 10px;
+      width: 300px;
+      padding: 10px 20px;
+      margin-right: 10px;
+
+    }
+    .input-box::placeholder {
+      color: black;
+      font-size: 16px;
+
+    }
+    .add-task-button {
+      background-color: #eaf6f6;
+      padding: 10px 20px;
+    }
+    .task-section-title {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+
+    .todo-task-section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border: 2px solid lightblue;
+      padding: 10px 20px;
+      background-color: #eaf6f6;
+      margin-bottom: 10px;
+    }
+    .todo-task-control {
+      display: flex;
+      
+    }
+    .delete-button {
+      margin-left: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fcfefe;
+      background-color: #f76b8a;
+      padding: 10px 14px;
+    }
+    .edit-button {
+      font-size: 16px;
+      background-color: #66bfbf;
+      color: #eaf6f6;
+      padding: 10px 14px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="todo-list-container">
+
+    <div class="title">Task List 2023</div>
+    <div class="input-box-section">
+    <input type="text" placeholder="What do you have planned?" class="input-box">
+    <div class="add-task-button">Add task</div>
+    <select name="option-list" id="">
+      <option value="all">All</option>
+      <option value="personal">Personal</option>
+      <option value="business">Business</option>
+      <option value="work">Work</option>
+    </select>
+  </div>
+
+  <div class="task-section-title">Tasks</div>
+
+  <div class="todo-task-section">
+    <div>Build a task app in 2023</div>
+    <div class="todo-task-control">
+      <div class="edit-button">Edit</div>
+      <div class="delete-button">DELETE</div>
+    </div>
+  </div>
+
+  <div class="todo-task-section">
+    <div>Subscribe to Crycu Truly YouTube Channel</div>
+    <div class="todo-task-control">
+      <div class="edit-button">Edit</div>
+      <div class="delete-button">DELETE</div>
+    </div>
+  </div>
+
+
+
+  </div>
+  
+</body>
+</html>
